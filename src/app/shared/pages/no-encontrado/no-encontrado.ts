@@ -7,11 +7,12 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="empty-state" style="min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-      <div style="font-size:64px">404</div>
+      <div style="font-size:64px" aria-hidden="true">🔎</div>
       <h2>Página no encontrada</h2>
-      <p>La ruta solicitada no existe en AutoAndes.</p>
+      <p>La página que buscas no está disponible. Revisa el enlace o vuelve al inicio.</p>
       <a routerLink="/" class="btn btn-primary" style="margin-top:16px">Ir al inicio</a>
     </div>
   `
 })
 export class NoEncontrado {}
+
